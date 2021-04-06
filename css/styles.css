@@ -519,7 +519,7 @@ hr{
     background-color: rgb(15, 123, 218) /* Add a dark-grey background on hover */
 }
 
-/* style contact-us */
+/* style page contact-us */
 
 .header-img{
     width: 100%;
@@ -532,10 +532,12 @@ hr{
 
 .header-img-h1{
     color: white;
+    margin-right: 2%;
 }
 
 .header-img-hr{
     border-bottom: 3px solid white;
+    margin-right: 2%;
 }
 
 .first-item-main{
@@ -625,6 +627,16 @@ hr{
     margin-top: 10%;
 }
 
+.last-div-h2{
+    text-align: center;
+}
+
+.last-div-h4{
+    text-align: center;
+    font-family: "vazir-thin";
+    color: gray;  
+}
+
 @media screen and (max-width:1358px){
     .footer-left{
         margin-top: 0px;
@@ -650,17 +662,96 @@ hr{
         ,url("../images/IMG_20210114_102002-2-11111.jpg");
         padding: 15% 5% 15% 0;
     }
+    .main-items{
+        display: flex;
+    }
+    .second-item-main{
+        width: 40%;
+        margin: 40px auto;
+        box-shadow: 5px 5px 140px rgb(231, 240, 255,0.5);
+    }
+    .first-item-main{
+        width: 45%;
+        height: 400px;
+        margin: 50px auto;
+    }
+    .first-item-h2{
+        font-size: 2.3rem;
+    }
+    .first-item-p{
+        font-size: 1.2rem;
+    }
+    .last-div-h2{
+        font-size: 2.3rem;
+        text-align: right;
+    }
+    .last-div-btns{
+        display: flex;
+        margin-right: 0%;
+    }
+    .last-div{
+        display: flex;
+        width: 80%;
+        margin: 8% auto;
+    }
+    .last-div-h4{
+        text-align: right;
+    }
+    .last-div-btn{
+        margin: 0 5%;
+    }
 }
 
 @media screen and (min-width:1025px){
     .header-img{
         width: 100%;
+        /*
         background-image:
-        linear-gradient(to bottom, rgba(0, 0, 0, 0.41), rgba(0, 0, 0, 0.66))
-        ,url("../images/IMG_20210114_102002-2-111111.jpg");
+        linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))
+        ,url("../images/desktop-size-img.jpg");
+        */
+        background: #eb01a5;
+        background-image: url("IMAGE_URL"); /* fallback */
+        background-image: url("../images/envelope.png"), linear-gradient(#eb01a5, #d13531);
         background-repeat: no-repeat;
-        padding: 8% 5% 8% 0;
-
+        padding: 6% 5% 8% 0;
+    }
+    .last-div{
+        width: 80%;
+        justify-content: center;
+    }
+    .last-div-btns{
+        margin-top: 2%;
+    }
+    .last-div-btns{
+        margin-right: 25%;
+    }
+    .main-items{
+        width: 85%;
+        margin: 4% auto;
+    }
+    .second-item-main{
+        width: 35%;
+    }
+    .second-item-form{
+        padding: 8% 0;
+    }
+    .first-item-main{
+        width: 45%;
+        height: 400px;
+        margin-left: -5%;
+    }
+    .bg-color{
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(231,240,255,0.1) 0%, rgba(231,240,255,0.6) 100%);
+    }
+    .header-img-h1{
+        margin-right: 9%;
+        font-size: 3.5rem;
+    }
+    .header-img-hr{
+        margin-right: 9%;
+        width: 10%;
     }
 }
 
@@ -675,7 +766,7 @@ hr{
     }
 }
 
-/* end style contact-us */
+/* end style page contact-us */
 
 @media screen and (max-width:800px){
     .bg-image-header{
