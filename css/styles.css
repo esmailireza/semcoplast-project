@@ -1,30 +1,26 @@
 @font-face {
-  font-family: "vazir-bold";
-  src: url("../fonts/Vazir-Bold.woff");
+  font-family: "irans-bold";
+  src: url("../fonts/IRANSans-Bold-web.woff");
 }
 
 @font-face {
-  font-family: "vazir-light";
-  src: url("../fonts/Vazir-Light.woff");
+  font-family: "irans-light";
+  src: url("../fonts/IRANSans-Light-web.woff");
 }
 
 @font-face {
-  font-family: "vazir-medium";
-  src: url("../fonts/Vazir-Medium.woff");
+  font-family: "irans-medium";
+  src: url("../fonts/IRANSans-Medium-web.woff");
 }
 
 @font-face {
-  font-family: "vazir-thin";
-  src: url("../fonts/Vazir-Thin.woff");
+  font-family: "irans-thin";
+  src: url("../fonts/IRANSans-UltraLight-web.woff");
 }
 
 @font-face {
   font-family: "irans";
   src: url("../fonts/IRANSans-web.woff");
-}
-
-body {
-  font-family: "vazir-bold";
 }
 
 * {
@@ -34,17 +30,19 @@ body {
 }
 
 p {
-  font-family: "vazir-light";
+  font-family: "irans-light";
 }
 
 .h1-header {
+  font-family: "irans-bold";
   color: white;
-  font-size: 4vw; /* 60px to 4vw (responsive)*/
+  font-size: 3.5vw; /* 60px to 4vw (responsive)*/
   line-height: 80px;
   margin: 30px;
 }
 
 .p-header {
+  font-family: "irans-light";
   color: white;
   font-size: 18px;
   text-align: justify;
@@ -54,10 +52,11 @@ p {
 
 ul {
   list-style-type: none;
+  font-family: "irans-light";
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .nav-header {
@@ -140,17 +139,20 @@ a {
 }
 
 .h2-aboutMe {
-  margin-top: 20px;
+  margin-top: 35px;
+  font-size: 24px;
+  font-family: "irans-bold";
 }
 
 .h3-aboutMe {
   margin-top: 20px;
-  font-family: "irans";
+  font-family: "irans-bold";
   color: rgb(192, 192, 192);
-  font-size: 17px;
+  font-size: 15px !important;
 }
 
 .btn-aboutMe {
+  font-family: "irans-light";
   padding: 10px 30px;
   background-color: white;
   color: #285488;
@@ -163,7 +165,9 @@ a {
 
 /* product section */
 .h1-product {
+  font-family: "irans-bold";
   text-align: center;
+  font-size: 30px;
 }
 
 .p-product {
@@ -205,6 +209,8 @@ a {
 }
 
 .title-img {
+  font-family: "irans-medium";
+  font-size: 18px;
   text-align: center;
   margin-top: 20px;
 }
@@ -225,6 +231,7 @@ a {
 }
 
 .whats-title {
+  font-family: "irans-bold";
   width: 550px;
 }
 
@@ -232,6 +239,16 @@ a {
   text-align: justify;
   color: gray;
   margin-top: 25px;
+}
+
+.whats-h1{
+  font-family: "irans-bold";
+  font-size: 30px;
+}
+
+.whats-h3{
+  font-family: "irans-bold";
+  font-size: 18px;
 }
 
 hr {
@@ -312,6 +329,8 @@ hr {
 .bozorgtarin-h1 {
   margin-right: 80px;
   margin-top: 40px;
+  font-family: "irans-bold";
+  font-size: 28px;
 }
 
 .bozorgtarin-hr {
@@ -336,6 +355,8 @@ hr {
 
 .vickegiha-h1 {
   text-align: center;
+  font-family: "irans-bold";
+  font-size: 30px;
 }
 
 .vickegiha-p {
@@ -366,6 +387,8 @@ hr {
 }
 
 .vickegiha-logo-h3 {
+  font-size: 16px;
+  font-family: "irans-medium";
   margin-top: 30px;
   width: 200px;
   text-align: center;
@@ -382,6 +405,8 @@ hr {
 
 /* رزین اپوکسی */
 .rezin-h1 {
+  font-family: "irans-bold";
+  font-size: 28px;
   margin-left: 80px;
   margin-top: 40px;
   padding-right: 30px;
@@ -409,6 +434,11 @@ hr {
   height: 100px;
 }
 
+.sponser-h1{
+  font-family: "irans-bold";
+  font-size: 30px;
+}
+
 .sponser-logo {
   display: flex;
   flex-wrap: wrap;
@@ -433,6 +463,7 @@ hr {
 }
 
 .footer-h2 {
+  font-family: "irans-medium";
   color: white;
   font-size: 20px;
 }
@@ -474,6 +505,7 @@ hr {
   color: white;
   text-align: center;
   padding: 1% 6%;
+  margin-bottom: 0px;
 }
 
 .li-flex {
@@ -490,12 +522,19 @@ hr {
 }
 
 .footer-center-li {
+  font-family: "irans-light";
+  font-size: 15px;
   margin-bottom: 5px;
 }
 
 .li-font-size {
+  font-family: "irans-thin";
   font-size: 12px;
   margin-top: 6px;
+}
+
+.footer-li{
+  font-family: "irans-light";
 }
 
 /* go to top (button) */
@@ -510,13 +549,22 @@ hr {
   background-color: rgb(74, 147, 214); /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
+  padding: 10px 15px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
 }
 
 #myBtn:hover {
   background-color: rgb(15, 123, 218); /* Add a dark-grey background on hover */
+}
+
+.btn-icon-top{
+  margin-top: -5px;
+}
+
+/* accordion bootstrap */
+.accordion-fontFamily{
+  font-family: "irans-medium";
 }
 
 @media screen and (max-width: 800px) {
