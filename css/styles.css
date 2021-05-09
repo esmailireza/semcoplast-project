@@ -23,6 +23,7 @@
   src: url("../fonts/IRANSans-web.woff");
 }
 
+
 * {
   margin: 0;
   padding: 0;
@@ -122,7 +123,7 @@ a {
 }
 
 .box-aboutMe {
-  border-top: 8px solid rgb(74, 147, 214);
+  border-top: 8px solid rgb(73, 166, 233);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   color: white;
